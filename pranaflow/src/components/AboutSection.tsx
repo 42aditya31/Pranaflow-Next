@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { Compare } from "@/components/ui/compare";
 const AboutSection = () => {
   return (
    <>
@@ -15,8 +16,15 @@ const AboutSection = () => {
       </motion.h1>
    <div className='Main flex flex-row h-screen mt-24'>
 
-    <div className="left w-[40%]">
-
+    <div className="left w-[40% ] ml-4">
+    <Compare
+        firstImage="https://assets.aceternity.com/code-problem.png"
+        secondImage="https://assets.aceternity.com/code-solution.png"
+        firstImageClassName="object-cover object-left-top"
+        secondImageClassname="object-cover object-left-top"
+        className="h-[250px] w-[200px] md:h-[500px] md:w-[500px]"
+        slideMode="hover"
+      />
       
     </div>
     <div className="right w-[60%]">
