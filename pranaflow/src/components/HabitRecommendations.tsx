@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Poppins } from "next/font/google";
+import PredictSearch from "./PredictSearch";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -66,12 +67,7 @@ const HabitRecommendations: React.FC = () => {
             <h2 className="text-3xl font-extrabold mb-6 text-purple-400">
               What's Your Goal?
             </h2>
-            <textarea
-              className="w-full h-40 p-4 bg-gray-900 text-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none placeholder-gray-400"
-              placeholder="e.g., I want to manage my time better"
-              value={userInput}
-              onChange={handleInputChange}
-            />
+           <PredictSearch/>
             <button
               className="mt-4 w-full bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-lg transition duration-300 hover:shadow-lg"
               onClick={() => alert("Prediction logic goes here!")}

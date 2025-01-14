@@ -2,6 +2,7 @@ import AboutSection from "@/components/AboutSection";
 import DailyPlanner from "@/components/DailyPlaner";
 import DailyPlanerContent from "@/components/DailyPlanerContent";
 import DailyPlanerConetnt from "@/components/DailyPlanerContent";
+import Footer from "@/components/Footer";
 import HabitRecommendations from "@/components/HabitRecommendations";
 import Herosection from "@/components/Herosection";
 import Testimonials from "@/components/Testimonials";
@@ -16,5 +17,7 @@ export default function Home() {
   <HabitRecommendations/>
   <TimeLineContent/>
   <Testimonials/>
+  <Footer/>
+  
   </>;
 }
